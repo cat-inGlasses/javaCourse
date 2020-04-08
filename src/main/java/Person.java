@@ -1,6 +1,6 @@
 import java.util.Comparator;
 
-public class Person {
+public class Person implements Comparable<Person>{
     private int id;
     private String name;
 
@@ -49,5 +49,12 @@ public class Person {
         int result = id;
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        if(this.name.length() > o.getName().length()) return 1;
+        else if(this.name.length() < o.getName().length()) return -1;
+        else return 0;
     }
 }
