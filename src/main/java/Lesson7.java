@@ -29,5 +29,8 @@ public class Lesson7 {
         for (Map.Entry<Integer, String> entry: map.entrySet()){
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
+
+        System.out.println(map);
+
     }
 }
