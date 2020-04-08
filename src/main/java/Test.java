@@ -35,11 +35,30 @@ public class Test {
 
         //------------------
 //        Lesson 3: Linked List
-        List<Integer> linkedList = new LinkedList<>();
-        List<Integer> arrayList = new ArrayList<>();
+//        List<Integer> linkedList = new LinkedList<>();
+//        List<Integer> arrayList = new ArrayList<>();
+//
+//        measureTime(linkedList);
+//        measureTime(arrayList);
 
-        measureTime(linkedList);
-        measureTime(arrayList);
+        //------------------
+        // lesson 4
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.add(1);
+        myLinkedList.add(2);
+        myLinkedList.add(10);
+        System.out.println(myLinkedList);
+
+        System.out.println(myLinkedList.get(1));
+
+        myLinkedList.remove(1);
+        System.out.println(myLinkedList);
+        myLinkedList.remove(1);
+        System.out.println(myLinkedList);
+        myLinkedList.remove(0);
+        System.out.println(myLinkedList);
+
+
     }
 
     private static void measureTime(List<Integer> list) {
