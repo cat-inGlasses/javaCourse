@@ -32,4 +32,12 @@ public class Person2 {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Person2{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
